@@ -1,9 +1,9 @@
-- Landing page that will show 
+**Landing page -** that will show
       - banner pictures
           - Stunning landscape images of nature
           - An engaging image featuring people using the company's product or services
           - A high quality photograph representing the main theme or purpose of the website 
-      - disclaimers 
+      __disclaimers__
           - Notes about the purpose of the website
           - Provide information about the website
       - login and and signup button
