@@ -9,17 +9,17 @@
       - login and and signup button
           - Locate and and tell the users to login/ signup 
           
-=============================================================
+============================================================= 
 
-STORY 1: Landing Page
+STORY 1: Login/ Signup
+        - With unique Admin Signup account ONLY 
+        - If One Admin account is exist, and trying to signup as an Admin, should throw error - "Admin account should be unique and signup as a user ONLY"
+
+STORY 2: Landing Page
           - Contains 
                - Banners
                - Disclaimers
                - Login/ Signup buttons
                - Logo
-          - Admin can able to change/ update the landing page looks at anytime 
-
-STORY 2: Login/ Signup
-        - With unique Admin Signup account ONLY 
-        - If One Admin account is exist, and trying to signup as an Admin, should throw error - "Admin account should be unique and signup as a user ONLY"
+          - Admin can able to change/ update the landing page looks at anytime
          
