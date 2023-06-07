@@ -13,7 +13,7 @@
 
 */
 
-exports.signup = async (req, res, next) => {
+exports.signup = async (req, res) => {
   const {} = req.body;
   //TODO
   try {
