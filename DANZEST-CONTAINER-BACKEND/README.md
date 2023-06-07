@@ -1,3 +1,10 @@
+Hi,
+
+Please check the new notes below for a better collaboration works.
+**Thanks & regards,**
+**DANZEST**
+
+
 - Landing page that will show 
       - banner pictures
           - Stunning landscape images of nature
