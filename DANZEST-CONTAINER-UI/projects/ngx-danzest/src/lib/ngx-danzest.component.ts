@@ -2,19 +2,17 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'lib-ngx-danzest',
-  template: `
-    <p>
-      ngx-danzest works!
-    </p>
+  template: ` <p>ngx-danzest works! 
+  <lib-landing-page></lib-landing-page>
+
+  </p> 
+  <hr />
+  
   `,
-  styles: [
-  ]
+  styles: [],
 })
 export class NgxDanzestComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
