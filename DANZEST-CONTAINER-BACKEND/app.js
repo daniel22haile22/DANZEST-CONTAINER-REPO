@@ -3,7 +3,6 @@ const cors = require('cors');
 const signupRoutes = require("./routes/user.routes");
 const initiateMyMongoServer = require("./config/database");
 const landingPageRoutes = require('./routes/landingPages.routes');
-
 require("dotenv").config();
 
 const app = express();
@@ -11,6 +10,7 @@ const app = express();
 //db connection
 initiateMyMongoServer();
 
+//Port number is 8080
 const PORT = 8080;
 app.use(express.json())
 app.use(cors());
