@@ -1,5 +1,5 @@
 const express = require("express");
-const { signup } = require("../controllers/userSignup.controllers");
+const { signup } = require("../controllers/user.controllers");
 // const upload = require("../middleware/upload");
 const { hashPassword } = require("../middleware/hashPassword");
 

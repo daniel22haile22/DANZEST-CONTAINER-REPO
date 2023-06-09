@@ -1,19 +1,15 @@
-/** TODO - 
+/** TODO -> Signup
  * check if 
      - The admin is already exist and should be one admin account. If the admin is exist throw an error - admin is already exist otherwise admin is successfully registered .
-     
      - The regular user is exist. ifExist, throw an error message. Otherwise, user is successfully registered.
-
-
      NB: 
      - hashedPassword and upload profilePicture will be done on middleware and pass into routes
      - The admin should be unique and one account allowed to create.
      - The regular user should be unique and can be multiple user account created.
      
-
 */
 
-const User = require("../models/userSignup.models"); ;
+const User = require("../models/user.models"); ;
 
 exports.signup = async (req, res) => {
   const {firstname, middlename, lastname, email, username, password, profilePicture, role} = req.body;
@@ -67,13 +63,10 @@ exports.signup = async (req, res) => {
   }
 };
 
-//{
-//         "firstname" : "DANIEL",
-//         "middlename": "G",
-//         "lastname": "HAILE",
-//         "email" : "D@GMAIL.COM",
-//         "username": "D123",
-//         "password" : "D123",
-//         "role" : "admin",
-//         "profilePicture": 
-// }
+/**
+ * TODO - Login
+ * 
+ */
+exports.login = async (req, res) => {
+
+}

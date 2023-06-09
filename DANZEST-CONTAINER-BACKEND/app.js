@@ -1,7 +1,9 @@
 const express = require('express');
 const cors = require('cors');
-const signupRoutes = require("./routes/userSignup.routes");
+const signupRoutes = require("./routes/user.routes");
 const initiateMyMongoServer = require("./config/database");
+const landingPageRoutes = require('./routes/landingPages.routes');
+
 require("dotenv").config();
 
 const app = express();
@@ -19,6 +21,8 @@ app.use(cors());
 
 // Register your routes
 app.use('/api', signupRoutes);
+// Landing Page routes
+app.use('/landing-page', landingPageRoutes);
 
 // Other route handlers and middleware
 
