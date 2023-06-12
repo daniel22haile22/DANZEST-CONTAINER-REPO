@@ -22,7 +22,7 @@ app.use(cors());
 // Register your routes
 app.use('/api', signupRoutes);
 // Landing Page routes
-app.use('/landing-page', landingPageRoutes);
+app.use('/api', landingPageRoutes);
 
 // Other route handlers and middleware
 

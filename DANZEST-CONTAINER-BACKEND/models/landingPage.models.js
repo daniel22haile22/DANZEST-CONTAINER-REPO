@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 // Contact Us Schema
-const contactUsSchema = new mongoose.Schema({
+const contactUsSchema = mongoose.Schema({
   name: { type: String, required: true },
   email: { type: String, required: true },
   message: { type: String, required: true },
@@ -9,13 +9,13 @@ const contactUsSchema = new mongoose.Schema({
 });
 
 // Terms And Conditions Schema
-const termsAndConditionsSchema = new mongoose.Schema({
+const termsAndConditionsSchema = mongoose.Schema({
   content: { type: String, required: true },
   createdAt: { type: Date, default: Date.now },
 });
 
 // Home Page Schema
-const homePageSchema = new mongoose.Schema({
+const homePageSchema = mongoose.Schema({
   title: { type: String, required: true },
   content: { type: String, required: true },
   imageUrl: String,
@@ -23,22 +23,31 @@ const homePageSchema = new mongoose.Schema({
 });
 
 // About Us Schema
-const aboutUsSchema = new mongoose.Schema({
-  // Define the fields for the About Us page
-});
-
-// Disclaimers Schema
-const disclaimersSchema = new mongoose.Schema({
+const aboutUsSchema = mongoose.Schema({
   content: { type: String, required: true },
   createdAt: { type: Date, default: Date.now },
 });
 
-const LandingPage = mongoose.model("LandingPage", {
-  ContactUs: contactUsSchema,
-  TermsAndConditions: termsAndConditionsSchema,
-  HomePage: homePageSchema,
-  AboutUs: aboutUsSchema,
-  Disclaimers: disclaimersSchema,
+// Disclaimers Schema
+const disclaimersSchema = mongoose.Schema({
+  content: { type: String, required: true },
+  createdAt: { type: Date, default: Date.now },
 });
 
-module.exports = LandingPage;
+const contactUs = mongoose.model("ContactUs", contactUsSchema);
+const termsAndConditions = mongoose.model(
+  "TermsAndConditions",
+  termsAndConditionsSchema
+);
+const homePage = mongoose.model("HomePage", homePageSchema);
+const disclaimers = mongoose.model("Disclaimers", disclaimersSchema);
+const aboutUs = mongoose.model("AboutUs", aboutUsSchema);
+
+module.exports = {
+  aboutUs,
+  disclaimers,
+  homePage,
+  termsAndConditions,
+  contactUs,
+  aboutUs,
+};
