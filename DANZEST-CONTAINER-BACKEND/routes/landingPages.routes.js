@@ -13,7 +13,7 @@ router.post(
 );
 
 // Home Page route
-// router.post("/home-page", landingPageControllers.createHomePage);
+router.post("/home-page", landingPageControllers.createHomePage);
 
 // // About Us route
 router.post("/about-us", landingPageControllers.createAboutUsPage);

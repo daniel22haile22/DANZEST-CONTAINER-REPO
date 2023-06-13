@@ -48,6 +48,5 @@ module.exports = {
   disclaimers,
   homePage,
   termsAndConditions,
-  contactUs,
-  aboutUs,
+  contactUs
 };

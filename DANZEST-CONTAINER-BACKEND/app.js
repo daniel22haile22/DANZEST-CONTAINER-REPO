@@ -3,6 +3,7 @@ const cors = require('cors');
 const signupRoutes = require("./routes/user.routes");
 const initiateMyMongoServer = require("./config/database");
 const landingPageRoutes = require('./routes/landingPages.routes');
+
 require("dotenv").config();
 
 const app = express();
