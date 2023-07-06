@@ -1,0 +1,32 @@
+.my-component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  background-color: #007bff;
+  color: #6c757d;
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  background-color: #007bff;
+
+  span {
+    color: #6c757d;
+  }
+}

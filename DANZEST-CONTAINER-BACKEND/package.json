@@ -1,6 +1,9 @@
 {
   "name": "danzest",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=18 <19" 
+  },
   "description": "This project will be as a container and will integrate with other independent projects by a different way like publishing npm package or using a library\" ",
   "main": "index.js",
   "scripts": {

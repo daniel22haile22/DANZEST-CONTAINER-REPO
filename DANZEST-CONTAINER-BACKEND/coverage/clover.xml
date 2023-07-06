@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1686421503328" clover="3.2.0">
-  <project timestamp="1686421503328" name="All files">
+<coverage generated="1688420119932" clover="3.2.0">
+  <project timestamp="1688420119932" name="All files">
     <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="8" coveredelements="8" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
     <file name="sum.js" path="/Users/danielhaile/Desktop/DANZEST-CONTAINER-PROJECT/DANZEST-CONTAINER-REPO/DANZEST-CONTAINER-BACKEND/test cases/sample tests/sum.js">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>

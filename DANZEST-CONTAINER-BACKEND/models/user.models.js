@@ -17,11 +17,7 @@ const signUpSchema = mongoose.Schema({
     type: String,
     requiered: true,
   },
-  username: {
-    type: String,
-    requiered: true,
-    unique: true,
-  },
+ 
   password: {
     type: String,
     requiered: true,
@@ -34,12 +30,16 @@ const signUpSchema = mongoose.Schema({
     requiered: true,
     enum: ['admin', 'user']
   },
+  dzID: {
+    type: String,
+    requiered: true,
+    unique: true
+  },
   createdAt: {
     type: Date,
     default: Date.now
   }
 });
-
 
 const SignUpModel = mongoose.model('SignUp', signUpSchema);
 module.exports = SignUpModel;

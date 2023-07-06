@@ -1,0 +1,45 @@
+<!-- <div class="main-wrapper">
+    <lib-disclaimers></lib-disclaimers>
+    <lib-about-us></lib-about-us> -->
+<marquee><h1 style="background-color: #7851a9">Welcome | እንኳን ደህና መጡ!!!</h1></marquee>
+<div class="panel panel-primary">
+<div class="panel-heading">
+
+</div>
+</div>
+   <form [formGroup]="homeForm" (ngSubmit)="postHomePage(homeForm)">
+  <mat-form-field>
+    <mat-label>Title</mat-label>
+    <input matInput formControlName="title" required>
+    <mat-error *ngIf="homeForm.get('title')?.invalid && homeForm.get('title')?.touched">
+      Title is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Content</mat-label>
+    <textarea matInput formControlName="content" required></textarea>
+    <mat-error *ngIf="homeForm.get('content')?.invalid && homeForm.get('content')?.touched">
+      Content is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Image URL</mat-label>
+    <input matInput formControlName="imageUrl" required>
+    <mat-error *ngIf="homeForm.get('imageUrl')?.invalid && homeForm.get('imageUrl')?.touched">
+      Image URL is required
+    </mat-error>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit" [disabled]="homeForm.invalid">
+    Submit
+  </button>
+</form>
+
+
+
+
+
+
+

@@ -12,7 +12,7 @@ const app = express();
 initiateMyMongoServer();
 
 //Port number is 8080
-const PORT = 8080;
+const PORT = 8000;
 app.use(express.json())
 app.use(cors());
 
@@ -21,9 +21,9 @@ app.use(cors());
 // app.use(uploadMiddleware);
 
 // Register your routes
-app.use('/api', signupRoutes);
+app.use('/user', signupRoutes);
 // Landing Page routes
-app.use('/api', landingPageRoutes);
+app.use('/landing-page', landingPageRoutes);
 
 // Other route handlers and middleware
 
